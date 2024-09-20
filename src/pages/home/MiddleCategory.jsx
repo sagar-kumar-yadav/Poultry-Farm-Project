@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const MiddleCategory = () => {
   return (
-    <div className="flex w-[90%] m-auto gap-4  text-white relative top-72 max-sm:top-40">
+    <div className="flex w-[90%] m-auto gap-4  text-white relative max-sm:top-40 pt-40">
     
       <div className="w-1/2 ">
         <Link to="/category/men">
