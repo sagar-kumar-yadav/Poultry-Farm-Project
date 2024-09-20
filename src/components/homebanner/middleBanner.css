@@ -1,0 +1,123 @@
+.about{
+    width: 100vw;
+    /* padding: 8rem 0; */
+    background: #1f1c1c;
+    color: white;
+}
+
+.about_main_cont{
+    max-width: 70rem;
+    margin: auto;
+    width: 100%;
+}
+
+.about_heading_sec{
+padding: 1rem;
+}
+
+.aboutTitle{
+    display: block;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 3.5rem;
+    position: relative;
+    font-weight: 800;
+}
+
+.aboutTitle::after{
+    content: '';
+    position: absolute;
+    top: calc(100% + 1.5rem);
+    height: 5px;
+    width: 3rem;
+    background: #c05621;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+.aboutDesc{
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1.2rem;
+    font-weight: 500;
+    max-width: 63rem;
+    margin: auto;
+    line-height: 1.6;
+}
+
+.about_grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10rem;
+}
+
+.about_grid_cont{
+    padding: 1rem;
+}
+
+.about_grid_heading{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2.5rem;
+}
+
+.about_content_details{
+    
+}
+
+.about_para{
+    font-size: 1rem;
+    /* color: grey; */
+    max-width: 118rem;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.contact_me_btn{
+    font-weight: 700;
+    background: #c05621;
+}
+
+.contact_me_btn:hover{
+    background-color: #8e4019;
+  }
+  
+  .contact_me_btn:active{
+    background-color: #8e4019;
+    /* box-shadow: 0 5px #666; */
+    transform: translateY(4px);
+  }
+
+.about_skills{
+    /* font-weight: 700; */
+    font-size: 1.4rem;
+    /* margin-bottom: 3rem; */
+}
+
+.about_skills_header{
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+}
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    padding: 1rem 1rem;
+    margin-bottom: 1.5rem;
+    margin-right: 1.5rem;
+    font-size: 1rem;
+    background: rgba(153, 153, 153, 0.2);
+    border-radius: 5px;
+    font-weight: 600;
+    /* color: #777; */
+    
+}
