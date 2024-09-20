@@ -3,7 +3,7 @@ import React from "react";
 const SearchInput = () => {
   
   return (
-    <div className=" h-10 min-w-[232px] w-[25%] flex items-center px-6 max-sm:hidden fixed left-[39%]">
+    <div className=" h-10 min-w-[200px] w-[25%] flex items-center px-6 max-sm:hidden fixed left-[39%]">
       <form 
     //   onSubmit={handleSubmit} 
       className="flex w-full items-center ">

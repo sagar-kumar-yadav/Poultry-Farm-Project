@@ -11,14 +11,15 @@ import { NavLink, Link, useNavigate } from "react-router-dom";
 const Header = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
   return (
     <header className=" fixed h-24 z-50 w-full flex items-center bg-[#323232] text-black dark:bg-white dark:text-black border-b border-solid border-[#787373]">
-      <div className="flex items-center w-[86%] max-md:w-[92%] justify-between min-w-max m-auto ">
+      <div className="flex items-center w-[96%] max-md:w-[92%] justify-between min-w-max m-auto ">
         {/* Logo And Name --------------------------------------------------------*/}
         <div className=" ">
           <a href="#" className="">
             {/* <span className=" font-bold text-2xl">Sagar.dev</span> */}
             <img
-              src="https://sktperfectdemo.com/themepack/poultry/wp-content/themes/skt-poultry-farm/images/logo.png"
+              src="/logo.jpg"
               alt=""
+              width="126px"
             />
           </a>
         </div>
