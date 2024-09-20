@@ -40,6 +40,19 @@ const Header = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
                 <span className=" font-bold">Home</span>
               </ScrollLink>
             </li>
+            <li>
+              <NavLink
+                activeClass="active"
+                to="/about"
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+                className="header_link "
+              >
+                <span className=" font-bold">About Us</span>
+              </NavLink>
+            </li>
             
 
             <li className="nav-item dropdown max-lg:hidden">
@@ -136,19 +149,7 @@ const Header = ({ toggleTheme, darkMode, isOpen, toggleMenu }) => {
                 <span className=" font-bold">Contact Us</span>
               </ScrollLink>
             </li>
-            <li>
-              <ScrollLink
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-                className="header_link "
-              >
-                <span className=" font-bold">About Us</span>
-              </ScrollLink>
-            </li>
+            
           </ul>
 
           <button onClick={toggleTheme} className="p-2">
