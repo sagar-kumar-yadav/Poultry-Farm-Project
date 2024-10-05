@@ -33,11 +33,11 @@ const Homepage = () => {
   const getAllCategory = async () => {
     try {
       const url =
-        // `${
-        //   import.meta.env.VITE_REACT_APP_URL
-        // }/api/v1/category/get-category`;
+        `${
+          import.meta.env.VITE_REACT_APP_URL
+        }/api/v1/category/get-all-categories`;
 
-        "http://localhost:8000/api/v1/category/get-all-categories";
+        
       const { data } = await axios.get(url);
       if (data?.success) {
         setCategories(data?.categories);
