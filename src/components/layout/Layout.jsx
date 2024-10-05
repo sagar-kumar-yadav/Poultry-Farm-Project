@@ -1,12 +1,16 @@
 import React from "react";
-import { Helmet } from "react-helmet";
-import Header from "./header/Header";
+import Footer from "./Footer/Footer";
 import { Toaster } from "react-hot-toast";
-import Footer from "./footer/Footer";
+import { Helmet } from "react-helmet";
+import Header from "./Header/Header";
 
 const Layout = ({ children, title, description, keywords, author }) => {
+  
+
   return (
-    <div>
+    <div
+      
+    >
       <Helmet>
         <meta charSet="utf-8" />
         <meta name="description" content={description} />
@@ -15,14 +19,22 @@ const Layout = ({ children, title, description, keywords, author }) => {
 
         <title>{title}</title>
       </Helmet>
-      <Header />
-      <div className="wrapper">
+      <Header/>
+      {/* <main style={{ minHeight: "74vh" }}> */}
+      <div>
         <Toaster />
         {children}
       </div>
       <Footer />
     </div>
   );
+};
+
+Layout.defaultProps = {
+  title: "URBANETHNIC - shop now",
+  description: "mern stack project",
+  keywords: "mern, react, mongodb, node",
+  author: "sagarkrydv",
 };
 
 export default Layout;

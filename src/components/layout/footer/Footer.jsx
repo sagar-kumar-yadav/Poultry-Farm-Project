@@ -1,56 +1,133 @@
 import React from "react";
-import "./footer.css";
-import Linkdin from "/pIcons/linkedin-ico.png";
-import Github from "/pIcons/github-ico.png";
-import Instagram from "/pIcons/insta-ico.png";
-import Mail from "/pIcons/email.png";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <footer className="footer">
-      <div className="footer_container">
-        <div className="footer_upper">
-          <div className="footer_row1">
-            <h2 className="footer_heading">
-              <span>Social</span>
-            </h2>
-            <div className="footer_social_cont">
-              <a href="https://www.linkedin.com/in/sagar-kumar-yadav/">
-                <img className="main_footer_icon" src={Linkdin} alt="icon" />
-              </a>
-              <a href="https://github.com/sagar-kumar-yadav">
-                <img className="main_footer_icon" src={Github} alt="icon" />
-              </a>
-              <a href="https://www.instagram.com/theproffnextdoor/">
-                <img className="main_footer_icon" src={Instagram} alt="icon" />
-              </a>
-              <a href="mailto:sagarkryadav31@gmail.com">
-                <img className="main_footer_icon" src={Mail} alt="icon" />
-              </a>
+    <footer className="footer relative bg-black pb-6 text-white bottom-0 w-full">
+      <div className="container mx-auto px-4">
+        <div className="flex flex-wrap text-left lg:text-left pt-8">
+          <div className="w-full lg:w-6/12 px-4 ">
+            <h4 className="text-3xl fonat-semibold max-lg:text-center">
+              Let's keep in touch!
+            </h4>
+            <h5 className="text-sm mt-0 mb-2 max-lg:text-center">
+              Find us on any of these platforms, we respond 1-2 business days.
+            </h5>
+            <div className="mt-6 lg:mb-0 mb-6 flex max-lg:justify-center">
+              <button
+                className="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-twitter" />
+              </button>
+              <button
+                className="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-facebook-square" />
+              </button>
+              <button
+                className="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-dribbble" />
+              </button>
+              <button
+                className="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2"
+                type="button"
+              >
+                <i className="fab fa-github" />
+              </button>
             </div>
           </div>
-          <div className="footer_row2">
-            <h4 className="footer_heading1">Aadarshudyoug Poultry Farm</h4>
-            <p className="footer_short_desc">
-              <span className=" ">sagarkryadav31@gmail.com</span>
-              <span>+91 8578858827</span>
-              <span>Pune, Maharashtra</span>
-            </p>
+          <div className="w-full lg:w-6/12 px-4">
+            <div className="flex flex-wrap items-top mb-6">
+              <div className="w-1/2 lg:w-4/12 px-4 ml-auto">
+                <span className="block w-max uppercase  text-sm font-semibold mb-2">
+                  Useful Links
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <Link
+                      className=" hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      About Us
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className=" hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Blog
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className=" hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Github
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className=" hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Free Products
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+              <div className="w-1/2 lg:w-4/12 px-4 ">
+                <span className="block  max-lg:text-end uppercase  text-sm font-semibold mb-2">
+                  Other Resources
+                </span>
+                <ul className="list-unstyled">
+                  <li>
+                    <Link
+                      className="  max-lg:text-end hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      MIT License
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className=" max-lg:text-end hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Terms &amp; Conditions
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className=" max-lg:text-end hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Privacy Policy
+                    </Link>
+                  </li>
+                  <li>
+                    <Link
+                      className="  max-lg:text-end hover:text-blueGray-800 font-semibold block pb-2 text-sm"
+                      to="#"
+                    >
+                      Contact Us
+                    </Link>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
-        {/* footer lower */}
-        {/* <div className="footer_lower">
-          &copy; Copyright 2024. Made by <a className="w-2" href="https://sagar-kumar-yadav.netlify.app/">Sagar Yadav</a>
-        </div> */}
-
         <hr className="my-6 border-blueGray-300" />
         <div className="flex flex-wrap items-center md:justify-between justify-center">
           <div className="w-full md:w-4/12 px-4 mx-auto text-center">
             <div className="text-sm  font-semibold py-1">
-              &copy; Copyright 2024. Made by{" "}
-              <span id="get-current-year">2024</span>
+              Copyright © <span id="get-current-year">2021</span>
               <Link
                 to="https://sagar-kumar-yadav.netlify.app/"
                 className=" hover:text-gray-800"

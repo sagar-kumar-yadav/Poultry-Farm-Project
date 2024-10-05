@@ -9,17 +9,13 @@ const slides = [
   {
     url: "/banner/banner12.jpg",
   },
-  {
-    url: "/banner/banner15.jpg",
-  },
-  {
-    url: "/banner/banner13.jpg",
-  },
+  
 ];
 
 const Banner = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
+  // Function to handle automatic sliding
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
@@ -44,6 +40,8 @@ const Banner = () => {
     // console.log(slideIndex);
     setCurrentSlide(slideIndex);
   };
+
+  // console.log(slides[0]);
   return (
     <div className=" h-[780px] w-[97%] m-auto relative group">
       {slides.map((slide, index) => (
@@ -57,19 +55,19 @@ const Banner = () => {
           className="w-full h-full bg-center bg-cover duration-500  rounded-md absolute top-20 max-sm:top-12"
         >
           <span className="absolute bottom-80 text-white flex flex-col left-8 font-medium max-sm:bottom-[26rem]">
-            POULTRY FARMS
+            AADARSHYOUG
           </span>
-          <div className=" uppercase absolute bottom-96 text-black flex flex-col left-48 font-medium max-sm:top-32 max-sm:hidden">
-            <span className=" text-4xl">Fresh Eggs for You</span>
-            <span className=" font-bold text-7xl">EVERYDAY!</span>
-            <span className="">Taste our Delicious and nutritious eggs</span>
+          <div className=" uppercase absolute bottom-60 text-white flex flex-col left-48 font-medium max-sm:top-32 max-sm:hidden">
+            <span className="">Find Thousand Of Local And</span>
+            <span className="">International Brands to complete your</span>
+            <span className="">Fashion needs</span>
           </div>
           <div className=" absolute right-0 bottom-32 flex flex-col max-sm:bottom-44 bg-black bg-opacity-50">
             <span className=" text-7xl font-extrabold text-white text-end max-sm:text-6xl">
-              Poultry Cage &
+              AADARSH
             </span>
             <span className=" text-8xl font-bold text-white max-sm:text-7xl">
-              Poultry Equipments
+              YOUG
             </span>
           </div>
           <div className="absolute bottom-36 underline text-white flex left-8 font-medium">
@@ -87,7 +85,7 @@ const Banner = () => {
         <BsChevronCompactRight onClick={nextSlide} size={30} />
       </div>
       {/* dot length */}
-      <div className="flex justify-center py-2 absolute top-[98%] -translate-x-0 translate-y-[-95%] left-[45%]">
+      <div className="flex justify-center py-2 absolute top-[95%] -translate-x-0 translate-y-[-95%] left-[45%]">
         {slides.map((slide, index) => (
           <div key={index}>
             <div

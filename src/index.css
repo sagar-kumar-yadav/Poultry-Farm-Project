@@ -2,14 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 *{
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
 }
 
 body{
-  overflow: hidden;
-  overflow-y: scroll;
-  /* background-color: #E0E5E9; */
-  /* background: #ffffff; */
+    overflow: hidden;
+    overflow-y: scroll;
+    /* background-color: #E0E5E9; */
+    /* background: #ffffff; */
 }
