@@ -54,11 +54,10 @@ const Homepage = () => {
   const getAllProducts = async () => {
     try {
       const url =
-        // `${
-        //   import.meta.env.VITE_REACT_APP_URL
-        // }/api/v1/product/get-products?limit=10`;
+        `${
+          import.meta.env.VITE_REACT_APP_URL
+        }/api/v1/product/get-products?limit=10`;
 
-        "http://localhost:8000/api/v1/product/get-products";
       const { data } = await axios.get(url);
       if (data.success) {
         setProducts(data.products);
