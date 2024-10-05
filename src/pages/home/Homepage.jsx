@@ -13,7 +13,7 @@ import { useLoading } from "../../context/loading";
 import MiddleQuote from "./MiddleQuote";
 import MiddleCategories from "./MiddleCategories";
 import BottomPage from "./BottomPage";
-import Banner from "../../components/HomeBanner/Banner";
+import Banner from "../../components/layout/Banner";
 
 const Homepage = () => {
   const navigate = useNavigate();
