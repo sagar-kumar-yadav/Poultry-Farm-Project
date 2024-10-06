@@ -1,7 +1,7 @@
 import React from "react";
+import Footer from "./Footer/Footer";
 import { Toaster } from "react-hot-toast";
 import { Helmet } from "react-helmet";
-import Footer from "./Footer";
 import Header from "./Header/Header";
 
 const Layout = ({ children, title, description, keywords, author }) => {

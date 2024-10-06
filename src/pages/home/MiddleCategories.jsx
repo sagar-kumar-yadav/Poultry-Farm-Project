@@ -7,12 +7,12 @@ const MiddleCategories = () => {
       <div className="w-1/2 ">
         <Link to="/category/men">
           <div className=" text-[#cd1818] absolute flex flex-col items-center top-[50%] right-[50%] w-1/2">
-            <span className=" font-bold text-6xl max-sm:text-4xl">CAGE</span>
-            {/* <span>New Arrival</span> */}
+            <span className=" font-bold text-6xl max-sm:text-4xl">MAN</span>
+            <span>New Arrival</span>
           </div>
 
           <img
-            src="banner/cage.jpg"
+            src="banner/middle1.jpg"
             alt=""
             className="rounded-lg w-full h-full object-cover max-h-[38rem]"
           />
@@ -21,12 +21,12 @@ const MiddleCategories = () => {
       <div className="w-1/2">
         <Link to="/category/ladies">
           <div className="text-[#cd1818] absolute flex flex-col items-center top-[50%] left-[50%] w-1/2">
-            <span className="font-bold text-6xl max-sm:text-3xl">FEEDER</span>
-            {/* <span>New Arrival</span> */}
+            <span className="font-bold text-6xl max-sm:text-3xl">WOMAN</span>
+            <span>New Arrival</span>
           </div>
 
           <img
-            src="banner/feeder.jpg"
+            src="banner/middle2.jpg"
             alt=""
             className="rounded-lg w-full h-full object-cover max-h-[38rem]"
           />

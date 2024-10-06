@@ -79,10 +79,10 @@ const Header = () => {
         >
           <div className="flex items-center ">
             <div className=" md:py-0 w-28">
-              <img src="/banner/logo.jpg" alt="logo-png" className=" w-20" />
-              {/* <span className="  text-2xl font-bold italic max-sm:hidden">
-                URBANETHNIC
-              </span> */}
+              <img className=" w-20" src="/src/assets/logo.jpg" alt="logo-png" />
+              <span className="  text-2xl font-bold italic max-sm:hidden">
+                
+              </span>
               {/* <span className="  text-2xl font-bold italic max-sm:block sm:hidden">
                 U<span className="text-sm">rban</span>
                 <span>E</span>
@@ -116,7 +116,7 @@ const Header = () => {
                   </NavLink>
                 </li>
 
-              {/* search menu for mobile devices ------------------------------------------------------*/}
+                {/* search menu for mobile devices ------------------------------------------------------*/}
                 <div className=" sm:hidden fixed right-16">
                   <button
                     // className="w-12"
@@ -185,40 +185,8 @@ const Header = () => {
                     </li>
                   </ul>
                 </li>
-
                 {/* mobile menu */}
-                <div className=" sm:hidden fixed right-24">
-                  <button
-                    // className="w-12"
-                    className={`w-8 ${isSearchOpen ? "hidden" : "block"}`}
-                    onClick={handleSearchClick}
-                  >
-                    <IoSearch size={24} className=" " />
-                  </button>
-                </div>
-                <div
-                  className={` sm:hidden ${isSearchOpen ? "block" : "hidden"}`}
-                >
-                  <form onSubmit={handleSubmit} className="flex items-center ">
-                    {isSearchOpen ? (
-                      <input
-                        type="text"
-                        placeholder="Search..."
-                        className="p-2 border border-gray-400 rounded bg-transparent h-8"
-                        value={values.keyword}
-                        onChange={(e) =>
-                          setValues({ ...values, keyword: e.target.value })
-                        }
-                      />
-                    ) : null}
-                    <button
-                      className="w-8 h-8 border-tl-4 border-bl-4 rounded-r-none text-[#282c3f]"
-                      onClick={handleSearchClick}
-                    >
-                      <AiOutlineClose size={26} className={` `} />
-                    </button>
-                  </form>
-                </div>
+                
 
                 {/* -------------------------------- */}
                 <ul

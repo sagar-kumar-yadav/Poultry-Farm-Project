@@ -19,11 +19,9 @@ const CategoryProduct = () => {
 
   const getProductByCategory = async () => {
     try {
-      const url =
-       `${
+      const url = `${
         import.meta.env.VITE_REACT_APP_URL
       }/api/v1/product/product-category/${params.slug}`;
-      
       // console.log(url);
       const { data } = await axios.get(url);
       // console.log(data);

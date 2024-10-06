@@ -9,7 +9,6 @@ const slides = [
   {
     url: "/banner/banner12.jpg",
   },
-  
 ];
 
 const Banner = () => {
